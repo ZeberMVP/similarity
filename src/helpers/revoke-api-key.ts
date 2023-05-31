@@ -11,6 +11,4 @@ export async function revokeApiKey() {
   if (data.error) {
     throw new Error(data.error);
   }
-
-  return data;
 }
