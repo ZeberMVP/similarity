@@ -1,34 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Welcome to the [similarity API](https://similarity-zeta.vercel.app/)! 
 
-## Getting Started
+You can use this API to compare two strings and get the percentage of similarity between them. 
 
-First, run the development server:
+## How to use it
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### Prerrequisites
+- You must have an API platform to make requests to the API. For this tutorial, I will be using [Postman](https://www.postman.com/).
+- You must have a Google account for authentication.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Steps
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Navigate to the [home](https://similarity-zeta.vercel.app/) page 
+![home](https://github.com/ZeberMVP/similarity/assets/106594858/cb30ca60-0136-491b-bb8c-c92379a5fc97)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. Sign in with your Google account <br> <br>
 
-## Learn More
+3. You will be redirected to the dashboard page and automatically be provided a new API key. If you click options, you can copy it. You can also revoke it and create a new one as you please. <br> <br>
+![dashboard](https://github.com/ZeberMVP/similarity/assets/106594858/304e0961-1a54-4988-b49d-aa352599c070)
 
-To learn more about Next.js, take a look at the following resources:
+4. Go to your API platform and make a POST request to this URL: https://similarity-zeta.vercel.app/api/v1/similarity. Make sure to include the following header:
+  - Authorization = _Your API key_ <br> <br>
+![header](https://github.com/ZeberMVP/similarity/assets/106594858/9e6b6255-0bef-4804-9aaf-fe46b1421d6e) <br> <br> <br>
+You should include two fields in the request: text1 and text2 <br> <br>
+![example of request](https://github.com/ZeberMVP/similarity/assets/106594858/dd9a3206-3295-40da-9178-7e4f87591bdb) <br> <br>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+5. Done! You should receive a response with the percentage of similarity between the two strings <br> <br>
+![results](https://github.com/ZeberMVP/similarity/assets/106594858/65010206-2470-4903-b696-0db6cd3bffc3)
