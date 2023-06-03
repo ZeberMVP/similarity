@@ -15,7 +15,7 @@ You can use this API to compare two strings and get the percentage of similarity
 
 2. Sign in with your Google account <br> <br>
 
-3. You will be redirected to the dashboard page and automatically be provided a new API key. If you click options, you can copy it. You can also revoke it and create a new one as you please. <br> <br>
+3. You will be redirected to the dashboard page and you will see the API key generator. You will need this API key. After generating one, if you click options, you can copy it. You can also revoke it and create new ones as you please. <br> <br>
 ![dashboard](https://github.com/ZeberMVP/similarity/assets/106594858/304e0961-1a54-4988-b49d-aa352599c070)
 
 4. Go to your API platform and make a POST request to this URL: https://similarity-zeta.vercel.app/api/v1/similarity. Make sure to include the following header:
