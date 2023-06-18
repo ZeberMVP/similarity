@@ -26,3 +26,5 @@ You should include two fields in the request: text1 and text2 <br> <br>
 
 5. Done! You should receive a response with the percentage of similarity between the two strings <br> <br>
 ![results](https://github.com/ZeberMVP/similarity/assets/106594858/65010206-2470-4903-b696-0db6cd3bffc3)
+
+All credits from this app are for [Josh](https://www.youtube.com/@joshtriedcoding), whose [tutorial](https://www.youtube.com/watch?v=4lUkSgvmTYM) I followed to carry out this project. 
